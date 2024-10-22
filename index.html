@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        
+        <h1 id="title">Welcome To My Page</h1>
+        <bUtton id="changetext">Change Text</bUtton>
+        <button id="back">Return</button>
+        
+        <script>
+            let headertitle = document.getElementById("title")
+            let buttonelement = document.getElementById("changetext")
+            let butonelement = document.getElementById("back")
+
+            buttonelement.addEventListener('click', function () {
+             headertitle.textContent = "Welcome To My Page, Let's get started"   
+            })
+            butonelement.addEventListener('click', function () {
+                headertitle.textContent = "Welcome To My Page"
+            })
+        </script>
+    </body>
+</html>
